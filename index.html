@@ -93,6 +93,10 @@
         if (input === 'aequinoctium') {
           document.getElementById('revealMessage').style.display = 'block';
           this.style.display = 'none';
+          // Redireccionamiento a la tercera página después de ingresar el código
+          setTimeout(function() {
+            window.location.href = "tercera_pagina.html"; // Redirige a la tercera página
+          }, 2000); // Redirecciona 2 segundos después de que el código es correcto
         } else {
           this.value = '';
         }
